@@ -1,0 +1,27 @@
+.listContainer{
+  width:90vw;
+  margin-left: 40px;
+
+}
+  
+  .cardsContainer{
+     
+      display: grid;
+      grid-template-columns: repeat(4,20%);
+      gap: 2rem;
+      justify-content: center;
+      align-content: center;
+   
+  } 
+ 
+
+@media (min-width: 720 ) {
+  .hero{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+  }
+ 
+
+
+    
+}

@@ -1,0 +1,53 @@
+<mat-grid-list cols="1" *ngIf="!heroe; else divHeroe">
+  <mat-grid-tile>
+    <mat-spinner>
+
+    </mat-spinner>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+<ng-template #divHeroe>
+
+  <div class="heroeContainer">
+    <div>
+      <h1>{{heroe.superhero}}
+        <small>- {{heroe.alter_ego}}</small></h1>
+      <mat-divider></mat-divider>
+      <br>
+      <img [src]="heroe|imagen" alt="">
+
+    </div>
+    
+    <div>
+      <h1>{{heroe.publisher}} <small></small></h1>
+      <mat-divider></mat-divider>
+      <mat-list>
+        <mat-list-item>{{heroe.first_appearance}}</mat-list-item>
+        <mat-list-item>{{heroe.characters}}</mat-list-item>
+        <mat-list-item>{{heroe.publisher}}</mat-list-item>
+        <mat-list-item>{{heroe.alter_ego}}</mat-list-item>
+      </mat-list>
+      <br>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate impedit, 
+        architecto, nulla earum veniam dolorum beatae similique officia quo eveniet 
+        sed reiciendis. Iusto, ea accusamus! Fugiat beatae temporibus saepe similique.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate impedit,
+           architecto, nulla earum veniam dolorum beatae similique officia quo eveniet
+           sed reiciendis. Iusto, ea accusamus! Fugiat beatae temporibus saepe similique.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate impedit,
+              architecto, nulla earum veniam dolorum beatae similique officia quo eveniet
+              sed reiciendis. Iusto, ea accusamus! Fugiat beatae temporibus saepe similique.</p>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate impedit,
+         architecto, nulla earum veniam dolorum beatae similique officia quo eveniet
+         sed reiciendis. Iusto, ea accusamus! Fugiat beatae temporibus saepe similique.</p>
+      <button mat-button color="warn"
+              (click)="comeBack()">
+        regresar
+      </button>
+    </div>
+
+  </div>
+
+
+</ng-template>

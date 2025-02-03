@@ -1,0 +1,25 @@
+img{
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+
+.addContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 2rem;
+  
+}
+.formContainer{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+
+.formHeroe{
+   
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 1.2rem;
+}
+
